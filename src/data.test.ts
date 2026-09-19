@@ -1,0 +1,1 @@
+import{describe,it,expect}from"vitest";describe("form rules",()=>{it("validates email",()=>expect(/^\\S+@\\S+\\.\\S+$/.test("user@example.com")).toBe(true));it("rejects short passwords",()=>expect("123".length<8).toBe(true))});
